@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using evtol_RideShare.Models;
 
 namespace evtol_RideShare.Data
 {
@@ -9,5 +10,6 @@ namespace evtol_RideShare.Data
             : base(options)
         {
         }
+        public DbSet<evtol_RideShare.Models.Passenger> Passenger { get; set; }
     }
 }
