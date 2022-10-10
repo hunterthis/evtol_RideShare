@@ -11,5 +11,6 @@ namespace evtol_RideShare.Data
         {
         }
         public DbSet<evtol_RideShare.Models.Passenger> Passenger { get; set; }
+        public DbSet<evtol_RideShare.Models.Pilot> Pilot { get; set; }
     }
 }
