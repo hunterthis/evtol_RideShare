@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using evtol_RideShare.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace evtol_RideShare.Controllers
@@ -8,7 +9,9 @@ namespace evtol_RideShare.Controllers
         // GET: PassengerController
         public ActionResult Index()
         {
+            List<Passenger> passenger = new List<Passenger>();
             return View();
+
         }
 
         // GET: PassengerController/Details/5
