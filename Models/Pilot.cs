@@ -3,11 +3,11 @@ namespace evtol_RideShare.Models
 {
     public class Pilot
     {
-        private string FAANumber;
+       // private string FAANumber;
 
         [Key]
         public int Id { get; set; }
-        public string Name { get; set; }
+        public string? Name { get; set; }
         /// <summary>
         /// Federal Aviation Administration
         /// </summary>
