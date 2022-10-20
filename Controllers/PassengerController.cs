@@ -10,7 +10,7 @@ namespace evtol_RideShare.Controllers
         public ActionResult Index()
         {
             List<Passenger> passenger = new List<Passenger>();
-            return View();
+            return View(passenger);
 
         }
 
