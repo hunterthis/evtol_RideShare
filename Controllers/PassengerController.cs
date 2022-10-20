@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using evtol_RideShare.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace evtol_RideShare.Controllers
@@ -8,7 +9,9 @@ namespace evtol_RideShare.Controllers
         // GET: PassengerController
         public ActionResult Index()
         {
-            return View();
+            List<Passenger> passenger = new List<Passenger>();
+            return View(passenger);
+
         }
 
         // GET: PassengerController/Details/5
@@ -26,7 +29,7 @@ namespace evtol_RideShare.Controllers
         // POST: PassengerController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(IFormCollection collection, object passenger)
         {
             try
             {
@@ -34,7 +37,7 @@ namespace evtol_RideShare.Controllers
             }
             catch
             {
-                return View();
+                return View(passenger);
             }
         }
 
