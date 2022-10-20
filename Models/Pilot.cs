@@ -8,7 +8,6 @@ namespace evtol_RideShare.Models
         [Key]
         public int Id { get; set; }
         public string? Name { get; set; }
-        private string? FAANumber;
         /// <summary>
         /// Federal Aviation Administration
         /// </summary>
