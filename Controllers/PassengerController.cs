@@ -29,7 +29,7 @@ namespace evtol_RideShare.Controllers
         // POST: PassengerController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection, object passenger)
+        public ActionResult Create(IFormCollection collection, Passenger passenger)
         {
             try
             {
