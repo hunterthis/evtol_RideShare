@@ -8,6 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\Images\Pictures\drone_cab.png" />
+    <None Include="wwwroot\Images\Pictures\drone_city.png" />
+    <None Include="wwwroot\Images\Pictures\drone_in_mountains.png" />
+    <None Include="wwwroot\Images\Pictures\drone_taxi.png" />
+    <None Include="wwwroot\Images\Pictures\Volocopter_search.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.9" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.9" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.9" />
