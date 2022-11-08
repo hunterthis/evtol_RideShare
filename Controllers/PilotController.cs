@@ -28,7 +28,7 @@ namespace evtol_RideShare.Controllers
         // POST: PilotController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(IFormCollection collection, Pilot pilot)
         {
             try
             {
