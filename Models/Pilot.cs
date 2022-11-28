@@ -6,7 +6,7 @@ namespace evtol_RideShare.Models
         private readonly string? FAANumber;
 
         [Key]
-        public int Id { get; set; }
+        public int FTN { get; set; }
         public string? Name { get; set; }
         /// <summary>
         /// Federal Aviation Administration
