@@ -11,7 +11,7 @@ namespace evtol_RideShare.Models
         /// <summary>
         /// Federal Aviation Administration
         /// </summary>
-       // public string FAANumber { get => FAANumber; set => FAANumber = value; }
+       // public string FAA tracking number (FTN) { get => FTN; set => FTN = value; }
         // TO DO: implement FAA number restrictions
     }
 
