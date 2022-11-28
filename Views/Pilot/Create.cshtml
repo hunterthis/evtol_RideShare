@@ -18,6 +18,12 @@
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label asp-for="FTN" class="control-label"></label>
+                <input asp-for="FTN" class="form-control" />
+                <span asp-validation-for="FTN" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>
@@ -28,3 +34,8 @@
     <a asp-action="Index">Back to List</a>
 </div>
 
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    }
