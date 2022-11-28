@@ -3,7 +3,7 @@ namespace evtol_RideShare.Models
 {
     public class Pilot
     {
-        private readonly string? FAANumber;
+        private readonly string? FAATrackingNumber;
 
         [Key]
         public int FTN { get; set; }
